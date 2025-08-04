@@ -8,6 +8,8 @@
     - [2. Monte Carlo Simulation of ETH Price Paths](#2-monte-carlo-simulation-of-eth-price-paths)
     - [3. Probability of Liquidation vs ETH Price](#3-probability-of-liquidation-vs-eth-price)
   - [Quantitative \& Financial Theory](#quantitative--financial-theory)
+    - [Geometric Brownian Motion (GBM)](#geometric-brownian-motion-gbm)
+      - [Loan-to-Value (LTV)](#loan-to-value-ltv)
   - [🛠 Tools \& Libraries](#-tools--libraries)
   - [Practical Applications](#practical-applications)
   - [Other Models: Sigmoid Curve4,5](#other-models-sigmoid-curve45)
@@ -19,7 +21,7 @@
 
 ## About This Repo and Me (https://github.com/codesport)
 
-THIS REPO IS STILL IN DRAFT.  I STILL NEED TO MAP MATH EQUATIONS TO PYTHON CODE in the [Quantitative \& Financial Theory](#quantitative--financial-theory) 
+**⚠️THIS REPO IS STILL A DRAFT.  I STILL NEED TO MAP MATH EQUATIONS TO PYTHON CODE in the [Quantitative \& Financial Theory](#quantitative--financial-theory)⚠️**
 
 This repository demonstrates the type of financial risk management work I do for clients at my current company.  In a nutshell, I apply traditional **quantitative finance techniques** to Decentralized Finance (DeFi) risk management.  
 
@@ -77,21 +79,22 @@ Or better yet, just set up time on [our Calendly](https://calendly.com/codesport
 
 ## Quantitative & Financial Theory
 
-- **Geometric Brownian Motion (GBM)**  
+### Geometric Brownian Motion (GBM)
 
 
 $$
 S_{t+1} = S_t \cdot \exp\left((\mu - \tfrac{1}{2}\sigma^2)\Delta t + \sigma \sqrt{\Delta t} \cdot Z\right), \quad Z \sim N(0,1)
 $$
 
-- **Loan-to-Value (LTV)**  
-  $$
-  LTV_t = \frac{\text{Loan USD}}{\text{Collateral Amount} \times S_t}
-  $$ 
-  - Liquidation occurs if:
-   $$
-   LTV_t \geq \text{liq\_factor}
-   $$
+#### Loan-to-Value (LTV)  
+$$
+LTV_t = \frac{\text{Loan USD}}{\text{Collateral Amount} \times S_t}
+$$ 
+
+Liquidation occurs if:
+$$
+LTV_t \geq \text{liq\_factor}
+$$
 
 
 - **Monte Carlo Simulation**  
