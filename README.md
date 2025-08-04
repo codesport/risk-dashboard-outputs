@@ -4,13 +4,13 @@
     - [About Me](#about-me)
   - [Takeaways](#takeaways)
   - [Visualizations](#visualizations)
-    - [1. Risk Surfaces \& Curves](#1-risk-surfaces--curves)
-    - [2. Monte Carlo Simulation of ETH Price Paths](#2-monte-carlo-simulation-of-eth-price-paths)
+    - [1. Monte Carlo Simulation of ETH Price Paths](#1-monte-carlo-simulation-of-eth-price-paths)
     - [3. Probability of Liquidation vs ETH Price](#3-probability-of-liquidation-vs-eth-price)
+    - [3. Risk Surfaces \& Curves](#3-risk-surfaces--curves)
   - [Quantitative \& Financial Theory](#quantitative--financial-theory)
     - [Geometric Brownian Motion (GBM)](#geometric-brownian-motion-gbm)
       - [Loan-to-Value (LTV)](#loan-to-value-ltv)
-  - [🛠 Tools \& Libraries](#-tools--libraries)
+  - [Tools \& Libraries](#tools--libraries)
   - [Practical Applications](#practical-applications)
   - [Other Models: Sigmoid Curve4,5](#other-models-sigmoid-curve45)
 
@@ -59,13 +59,7 @@ Or better yet, just set up time on [our Calendly](https://calendly.com/codesport
 
 ## Visualizations
 
-### 1. Risk Surfaces & Curves  
-*Liquidation probability across ETH price ranges and LTV thresholds*  
-![ETH Risk Surfaces & Curves](img/mcs-eth-heatmaps.webp)
-
----
-
-### 2. Monte Carlo Simulation of ETH Price Paths  
+### 1. Monte Carlo Simulation of ETH Price Paths  
 *30‑day ETH projections with 5th–95th percentile bands*  
 ![Monte Carlo ETH Price Paths](img/mcs-eth-price.webp)
 
@@ -76,6 +70,12 @@ Or better yet, just set up time on [our Calendly](https://calendly.com/codesport
 ![Liquidation Probability Line Chart](img/mcs-line-charts.webp)
 
 ---
+
+### 3. Risk Surfaces & Curves  
+*Liquidation probability across ETH price ranges and LTV thresholds*  
+![ETH Risk Surfaces & Curves](img/mcs-eth-heatmaps.webp)
+
+
 
 ## Quantitative & Financial Theory
 
@@ -103,7 +103,7 @@ $$
 
 ---
 
-## 🛠 Tools & Libraries
+## Tools & Libraries
 
 - **Python 3**  
 - **Pandas** for time series data  
