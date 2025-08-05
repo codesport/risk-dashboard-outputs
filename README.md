@@ -1,23 +1,27 @@
-# Table of Contents <!-- omit from toc -->
-- [DeFi Liquidation Risk Modeling with Monte Carlo Simulation](#defi-liquidation-risk-modeling-with-monte-carlo-simulation)
-  - [About This Repo and Me (https://github.com/codesport)](#about-this-repo-and-me-httpsgithubcomcodesport)
-    - [About Me](#about-me)
-  - [Takeaways](#takeaways)
-  - [Visualizations](#visualizations)
-    - [1. Monte Carlo Simulation of ETH Price Paths](#1-monte-carlo-simulation-of-eth-price-paths)
-    - [3. Probability of Liquidation vs ETH Price](#3-probability-of-liquidation-vs-eth-price)
-    - [3. Risk Surfaces \& Curves](#3-risk-surfaces--curves)
-  - [Quantitative \& Financial Theory](#quantitative--financial-theory)
-    - [Geometric Brownian Motion (GBM)](#geometric-brownian-motion-gbm)
-      - [Loan-to-Value (LTV)](#loan-to-value-ltv)
-  - [Tools \& Libraries](#tools--libraries)
-  - [Practical Applications](#practical-applications)
-  - [Other Models: Sigmoid Curve4,5](#other-models-sigmoid-curve45)
 
-# DeFi Liquidation Risk Modeling with Monte Carlo Simulation  
-*A Quantitative Research Project using ETH and Compound V3 Parameters*  
+# DeFi Liquidation Risk Modeling with Python and Monte Carlo Simulation  
+*A Quantitative Python Research Project using ETH and Compound V3 Parameters*  
 
 ---
+
+## Visualizations and Data Analysis
+
+### 1. Monte Carlo Simulation of ETH Price Paths  
+*30‑day ETH projections with 5th–95th percentile bands*  
+![Monte Carlo ETH Price Paths](img/mcs-eth-price.webp)
+
+---
+
+### 2. Probability of Liquidation vs ETH Price  
+*Direct comparison across collateral sizes (10, 12.5, 15 ETH)*  
+![Liquidation Probability Line Chart](img/mcs-line-charts.webp)
+
+---
+
+### 3. Risk Surfaces & Curves  
+*Liquidation probability across ETH price ranges and LTV thresholds*  
+![ETH Risk Surfaces & Curves](img/mcs-eth-heatmaps.webp)
+
 
 ## About This Repo and Me (https://github.com/codesport)
 
@@ -56,26 +60,6 @@ Or better yet, just set up time on [our Calendly](https://calendly.com/codesport
   - Highlights the importance of hedging for *both downside and upside volatility*.  
 
 ---
-
-## Visualizations
-
-### 1. Monte Carlo Simulation of ETH Price Paths  
-*30‑day ETH projections with 5th–95th percentile bands*  
-![Monte Carlo ETH Price Paths](img/mcs-eth-price.webp)
-
----
-
-### 3. Probability of Liquidation vs ETH Price  
-*Direct comparison across collateral sizes (10, 12.5, 15 ETH)*  
-![Liquidation Probability Line Chart](img/mcs-line-charts.webp)
-
----
-
-### 3. Risk Surfaces & Curves  
-*Liquidation probability across ETH price ranges and LTV thresholds*  
-![ETH Risk Surfaces & Curves](img/mcs-eth-heatmaps.webp)
-
-
 
 ## Quantitative & Financial Theory
 
@@ -125,29 +109,29 @@ $$
 
 I do not use these in my work, but many protocols use them to assist with incentive design: 
 
-- Token Supply Bonding Curves: Token Price vs Supply<sup>4,5</sup>
-     $$
-     Price(Supply) = \frac{L}{1 + e^{-k \cdot (Supply - x_{0})}}
-     $$  
+Token Supply Bonding Curves: Token Price vs Supply<sup>4,5</sup>:
+$$
+Price(Supply) = \frac{L}{1 + e^{-k \cdot (Supply - x_{0})}}
+$$  
 
-    Where:  
-    - \(L\) = maximum (ceiling) price  
-    - \(x_{0}\) = supply inflection point  
-    - \(k\) = steepness of the curve  
+Where:  
+$$\(L\)$$ = maximum (ceiling) price  
+$$\(x_{0}\)$$ = supply inflection point  
+$$\(k\)$ = steepness of the curve  
   
 - Borrowing rates
 - Liquidation penalties
 - Collateral factor adjustments
 - Protocol Health:
-    $$
-    P(LTV) = \frac{1}{1 + e^{-k \cdot (LTV - LTV_{0})}}
-    $$ 
+$$
+P(LTV) = \frac{1}{1 + e^{-k \cdot (LTV - LTV_{0})}}
+$$ 
 
 
 ---
 
 References:
-1. [Marcos A.B. at Code Sport Labs](https://github.com/codesport/monte-carlo)
+1. [Marcos (me) at Code Sport Labs](https://github.com/codesport/monte-carlo)
 2. Wilmott, Howison & Dewynne — The Mathematics of Financial Derivatives (Ch. 7 on barrier options)
 3. Gauntlet: *[Risk Modeling Primer](https://gauntlet.network/research)* 
 4. Chaos Labs: *["Simulating Liquidation Risk in DeFi Lending Protocols](https://chaoslabs.xyz/blog)*
