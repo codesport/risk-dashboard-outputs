@@ -117,7 +117,7 @@ $$
 Where:  
 $$\(L\)$$ = maximum (ceiling) price  
 $$\(x_{0}\)$$ = supply inflection point  
-$$\(k\)$ = steepness of the curve  
+$$\(k\)$$ = steepness of the curve  
   
 - Borrowing rates
 - Liquidation penalties
