@@ -33,7 +33,7 @@ Using **Monte Carlo simulation** with **Geometric Brownian Motion (GBM)**, I mod
 
 ### About Me
 
-If you're reading this you received a copy of my resume. Let's have a conversation!
+Let's have a conversation!
 
 Feel free to reach me through [Code Sport's contact us page](https://codesport.io/contact-us). 
 
