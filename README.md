@@ -2,6 +2,11 @@
 # DeFi Liquidation Risk Modeling with Python and Monte Carlo Simulation  
 *A Quantitative Python Research Project using ETH and Compound V3 Parameters*  
 
+## Author Credits
+
+These DeFi Financial Risk Management Dashboards were Developed by **[Marcos](https://github.com/codesport/monte-carlo#author-credits)**.  
+
+He may be reached through [Code Sport's contact us page](https://codesport.io/contact-us)
 ---
 
 ## Visualizations and Data Analysis
